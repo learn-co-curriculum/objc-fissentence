@@ -15,7 +15,7 @@ Putting a together a proper sentence can be difficult at times.
 
 In this lab, we're going to write a custom class to handle the logic of how to assemble the individual components (words and punctuation) of a sentence into a single string. We'll then present that string publicly as a read-only property and provide public methods that offer a controlled interface to the data that is used to form that sentence.
 
-In our implementation, we're going to hold the individual words as separate strings in an array called words, and the punctuation character in a separate string property called `punctuation`.
+In our implementation, we're going to hold the individual words as separate strings in an array called `words`, and the punctuation character in a separate string property called `punctuation`.
 
 ```objc
 NSArray *words = @[ @"King", @"illegal", @"forest", @"to", @"pig", @"kill", @"in", @"it", @"a", @"is" ];
@@ -143,3 +143,5 @@ Did you notice, that the `words` and `punctuation` properties that we stored the
 
 In order to initialize private properties so they can be used internally by method implementations, a special method called an "initializer" can be written to set private properties to default values without giving access to an outside class. In the case of our `words` mutable array, it could be initialized to and empty mutable array so that it's prepared to receive method calls that changes its data.
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/objc-fissentence' title='FISSentence'>FISSentence</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/objc-fissentence'>FISSentence</a> on Learn.co and start learning to code for free.</p>
